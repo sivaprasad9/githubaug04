@@ -1,2 +1,2 @@
 1st commit
-For Merge purpose
+for conflict purpose
