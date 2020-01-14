@@ -9,7 +9,7 @@ node  {
 	
 	 agent any
     tools {
-        maven 'Maven_3.6.3' 
+        maven 'M3' 
     }
     stages {
         stage('Compile stage') {
