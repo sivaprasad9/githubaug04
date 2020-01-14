@@ -6,7 +6,9 @@ pipeline {
     stages {
 	
        stage('SCM checkout'){
+	     steps {
 		git 'https://github.com/sivaprasad9/githubaug04.git'
+	     }
 	}    
         stage('Compile stage') {
             steps {
