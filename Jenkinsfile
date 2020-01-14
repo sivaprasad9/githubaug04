@@ -12,7 +12,14 @@ pipeline {
 	}    
         stage('Compile stage') {
             steps {
-                bat "mvn clean compile" 
+                echo "${env.WORKSPACE}"
+                bat  """
+                
+                cd  "${env.WORKSPACE}/enq/sam/com.enq
+                mvn clean compile 
+                
+                """
+                
         }
     }
 
