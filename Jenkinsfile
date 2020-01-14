@@ -3,8 +3,10 @@ node {
 		git 'https://github.com/sivaprasad9/githubaug04.git'
 	}
 	stage('compile-package'){
-		def mvnHome = tool name: 'M3', type: 'maven'
+		 withMaven(...) {
 		 bat "mvn clean install"
+		 }
 	}
 	
 }
+
