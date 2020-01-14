@@ -3,9 +3,9 @@ node ("windows") {
 		git 'https://github.com/sivaprasad9/githubaug04.git'
 	}
 	stage('compile-package'){
-		 withMaven(...) {
+		 withMaven({
 		 bat "mvn clean install"
-		 }
+		 })
 	}
 	
 }
